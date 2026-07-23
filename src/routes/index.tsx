@@ -11,8 +11,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Eesh Unisex Salon — Premium Hair & Beauty in Anchepalya, Bengaluru" },
       { name: "description", content: "Premium unisex salon near Chikkabidarakallu Metro. Haircuts, hair spa, keratin, bridal makeup, facials & more. Rated 4.8★ on Google." },
-      { property: "og:title", content: "Eesh Unisex Salon — Where Style Meets Perfection" },
-      { property: "og:description", content: "Premium hair, skin & beauty services in Anchepalya, Bengaluru. Open 7 days." },
+      { property: "og:title", content: "Eesh Unisex Salon — Premium Hair & Beauty in Anchepalya, Bengaluru" },
+      { property: "og:description", content: "Premium unisex salon near Chikkabidarakallu Metro. Haircuts, hair spa, keratin, bridal makeup, facials & more. Rated 4.8★ on Google." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
