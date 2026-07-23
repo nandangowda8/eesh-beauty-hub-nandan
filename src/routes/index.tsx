@@ -180,25 +180,7 @@ function Home() {
 
       {/* Info strip */}
       <section className="mx-auto max-w-7xl px-4 py-24 md:px-8">
-        <div className="grid gap-6 md:grid-cols-3">
-          <InfoCard icon={<MapPin className="h-5 w-5" />} title="Visit Us">
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Eesh Unisex Salon, Chikkabidarakallu Metro Station, Anchepalya, Bengaluru 560073")}`}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-accent"
-            >
-              8A, Next to Chikkabidarakallu Metro Station, Near Prestige Jindal City, Anchepalya, Bengaluru – 560073
-            </a>
-          </InfoCard>
-          <InfoCard icon={<Clock className="h-5 w-5" />} title="Open Daily">
-            Mon, Wed–Sun: 8 AM – 9 PM<br />Tuesday: 10 AM – 9 PM
-          </InfoCard>
-          <InfoCard icon={<Phone className="h-5 w-5" />} title="Call / WhatsApp">
-            <a href={`tel:${PHONE_TEL}`} className="hover:text-accent">{PHONE}</a><br />
-            <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer" className="hover:text-accent">Chat on WhatsApp</a>
-          </InfoCard>
-        </div>
+        <ContactPanel />
       </section>
 
       {/* CTA */}
