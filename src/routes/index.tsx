@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, MapPin, Clock, Star, Sparkles, Scissors, Heart, Award } from "lucide-react";
+import { Phone, Star, Sparkles, Scissors, Heart, Award } from "lucide-react";
+import { ContactPanel } from "@/components/ContactPanel";
 import heroImg from "@/assets/salon-hero.jpg";
 import hairImg from "@/assets/salon-hair.jpg";
 import facialImg from "@/assets/salon-facial.jpg";
