@@ -212,12 +212,3 @@ function Home() {
   );
 }
 
-function InfoCard({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
-  return (
-    <div className="rounded-3xl border border-border bg-card p-8 shadow-soft">
-      <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-gold text-primary">{icon}</div>
-      <h3 className="mt-5 font-display text-xl text-primary">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{children}</p>
-    </div>
-  );
-}
