@@ -44,10 +44,17 @@ function ContactPage() {
               </a>
             </ContactCard>
             <ContactCard icon={<MapPin className="h-5 w-5" />} title="Visit">
-              8A, Next to Chikkabidarakallu Metro Station,<br />
-              Near Prestige Jindal City, Ravi Kirloskar Layout,<br />
-              Anchepalya, Madanayakanahalli,<br />
-              Bengaluru, Karnataka – 560073
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+                target="_blank"
+                rel="noreferrer"
+                className="text-lg font-semibold text-primary hover:text-accent"
+              >
+                8A, Next to Chikkabidarakallu Metro Station,<br />
+                Near Prestige Jindal City, Ravi Kirloskar Layout,<br />
+                Anchepalya, Madanayakanahalli,<br />
+                Bengaluru, Karnataka – 560073
+              </a>
             </ContactCard>
             <ContactCard icon={<Clock className="h-5 w-5" />} title="Working Hours">
               <ul className="divide-y divide-border">
