@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, MapPin, Clock, Star, Sparkles, Scissors, Heart, Award } from "lucide-react";
+import { Phone, Star, Sparkles, Scissors, Heart, Award } from "lucide-react";
+import { ContactPanel } from "@/components/ContactPanel";
 import heroImg from "@/assets/salon-hero.jpg";
 import hairImg from "@/assets/salon-hair.jpg";
 import facialImg from "@/assets/salon-facial.jpg";
@@ -179,25 +180,7 @@ function Home() {
 
       {/* Info strip */}
       <section className="mx-auto max-w-7xl px-4 py-24 md:px-8">
-        <div className="grid gap-6 md:grid-cols-3">
-          <InfoCard icon={<MapPin className="h-5 w-5" />} title="Visit Us">
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Eesh Unisex Salon, Chikkabidarakallu Metro Station, Anchepalya, Bengaluru 560073")}`}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-accent"
-            >
-              8A, Next to Chikkabidarakallu Metro Station, Near Prestige Jindal City, Anchepalya, Bengaluru – 560073
-            </a>
-          </InfoCard>
-          <InfoCard icon={<Clock className="h-5 w-5" />} title="Open Daily">
-            Mon, Wed–Sun: 8 AM – 9 PM<br />Tuesday: 10 AM – 9 PM
-          </InfoCard>
-          <InfoCard icon={<Phone className="h-5 w-5" />} title="Call / WhatsApp">
-            <a href={`tel:${PHONE_TEL}`} className="hover:text-accent">{PHONE}</a><br />
-            <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer" className="hover:text-accent">Chat on WhatsApp</a>
-          </InfoCard>
-        </div>
+        <ContactPanel />
       </section>
 
       {/* CTA */}
@@ -229,12 +212,3 @@ function Home() {
   );
 }
 
-function InfoCard({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
-  return (
-    <div className="rounded-3xl border border-border bg-card p-8 shadow-soft">
-      <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-gold text-primary">{icon}</div>
-      <h3 className="mt-5 font-display text-xl text-primary">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{children}</p>
-    </div>
-  );
-}
