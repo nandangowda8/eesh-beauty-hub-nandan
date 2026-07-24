@@ -30,7 +30,7 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-8">
-        <ContactPanel />
+        <ContactPanel showMap />
       </section>
     </>
   );
