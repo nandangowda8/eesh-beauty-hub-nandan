@@ -6,9 +6,9 @@ const SHORT_ADDRESS = "8A, Next to Chikkabidarakallu Metro Station, Near Prestig
 const mapQuery = encodeURIComponent("Eesh Unisex Salon, Chikkabidarakallu Metro Station, Anchepalya, Bengaluru 560073");
 const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
 
-export function ContactPanel({ showMap = true, compact = false }: { showMap?: boolean; compact?: boolean }) {
+export function ContactPanel({ showMap = true, compact = false, large = false }: { showMap?: boolean; compact?: boolean; large?: boolean }) {
   return (
-    <div className={`overflow-hidden rounded-3xl border border-border bg-card shadow-elegant ${compact ? "" : "grid lg:grid-cols-[1fr_1.35fr]"}`}>
+    <div className={`overflow-hidden rounded-3xl border border-border bg-card shadow-elegant ${compact ? "" : "grid lg:grid-cols-[1fr_1.35fr]"} ${large ? "lg:grid-cols-[1fr_1.6fr]" : ""}`}>
       <div className="space-y-6 p-8 lg:p-10">
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">Reach us</span>
