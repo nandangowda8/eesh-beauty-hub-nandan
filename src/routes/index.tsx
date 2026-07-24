@@ -180,7 +180,7 @@ function Home() {
 
       {/* Info strip */}
       <section className="mx-auto max-w-7xl px-4 py-24 md:px-8">
-        <ContactPanel />
+        <ContactPanel large />
       </section>
 
       {/* CTA */}
