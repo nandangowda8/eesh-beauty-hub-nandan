@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, Sparkles, Scissors, Heart, Award } from "lucide-react";
-import { ContactPanel } from "@/components/ContactPanel";
+import { HomeContactStrip } from "@/components/HomeContactStrip";
 import heroImg from "@/assets/salon-hero.jpg";
 import hairImg from "@/assets/salon-hair.jpg";
 import facialImg from "@/assets/salon-facial.jpg";
@@ -178,10 +178,8 @@ function Home() {
         </div>
       </section>
 
-      {/* Info strip */}
-      <section className="mx-auto max-w-7xl px-4 py-24 md:px-8">
-        <ContactPanel large />
-      </section>
+      {/* Contact strip */}
+      <HomeContactStrip />
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-primary py-20">
