@@ -1,4 +1,4 @@
-import { Phone, MapPin, MessageCircle, Clock, Navigation, ExternalLink } from "lucide-react";
+import { Phone, MapPin, MessageCircle, Clock, ExternalLink } from "lucide-react";
 import { PHONE, PHONE_TEL, WHATSAPP, hours } from "@/lib/salon-data";
 
 const ADDRESS = "8A, Next to Chikkabidarakallu Metro Station, Near Prestige Jindal City, Ravi Kirloskar Layout, Anchepalya, Madanayakanahalli, Bengaluru, Karnataka – 560073";
@@ -26,15 +26,7 @@ export function ContactPanel({
         </p>
       </div>
 
-      <div className={`mx-auto mt-8 grid max-w-5xl gap-4 ${large ? "sm:grid-cols-3" : "grid-cols-1 sm:grid-cols-3"}`}>
-        <ActionButton
-          href={googleMapsUrl}
-          icon={<Navigation className={large ? "h-6 w-6" : "h-5 w-5"} />}
-          label="Visit us"
-          sublabel="Google Maps"
-          external
-          large={large}
-        />
+      <div className={`mx-auto mt-8 grid max-w-5xl gap-4 ${large ? "sm:grid-cols-2" : "grid-cols-1 sm:grid-cols-2"}`}>
         <ActionButton
           href={`tel:${PHONE_TEL}`}
           icon={<Phone className={large ? "h-6 w-6" : "h-5 w-5"} />}
