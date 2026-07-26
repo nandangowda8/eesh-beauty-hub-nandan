@@ -26,15 +26,7 @@ export function ContactPanel({
         </p>
       </div>
 
-      <div className={`mx-auto mt-8 grid max-w-5xl gap-4 ${large ? "sm:grid-cols-3" : "grid-cols-1 sm:grid-cols-3"}`}>
-        <ActionButton
-          href={googleMapsUrl}
-          icon={<Navigation className={large ? "h-6 w-6" : "h-5 w-5"} />}
-          label="Visit us"
-          sublabel="Google Maps"
-          external
-          large={large}
-        />
+      <div className={`mx-auto mt-8 grid max-w-5xl gap-4 ${large ? "sm:grid-cols-2" : "grid-cols-1 sm:grid-cols-2"}`}>
         <ActionButton
           href={`tel:${PHONE_TEL}`}
           icon={<Phone className={large ? "h-6 w-6" : "h-5 w-5"} />}
