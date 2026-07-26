@@ -1,4 +1,4 @@
-import { Phone, MapPin, MessageCircle, Clock, Navigation, ExternalLink } from "lucide-react";
+import { Phone, MapPin, MessageCircle, Clock, ExternalLink } from "lucide-react";
 import { PHONE, PHONE_TEL, WHATSAPP, hours } from "@/lib/salon-data";
 
 const ADDRESS = "8A, Next to Chikkabidarakallu Metro Station, Near Prestige Jindal City, Ravi Kirloskar Layout, Anchepalya, Madanayakanahalli, Bengaluru, Karnataka – 560073";
